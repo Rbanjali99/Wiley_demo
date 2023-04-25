@@ -1,0 +1,16 @@
+package Core_java;
+
+public class VarScope {
+	
+	int ins = 20;
+
+	public static void main(String[] args) {
+		int loc = 10;
+		
+		VarScope vso = new VarScope();
+		
+		System.out.println("local variable is " + loc);
+		System.out.println("instance variable is " + vso.ins);
+	}
+
+}

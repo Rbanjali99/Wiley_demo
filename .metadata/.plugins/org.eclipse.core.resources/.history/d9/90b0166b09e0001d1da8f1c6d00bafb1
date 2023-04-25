@@ -1,0 +1,19 @@
+package Core_java;
+
+public class VarScope {
+	int val = 50;
+	int ins = 20;
+	static String name = "Anjali";
+	
+	public static void main(String[] args) {
+		int loc = 10;
+		
+		VarScope vso = new VarScope();
+		
+		System.out.println("local variable is " + loc);
+		System.out.println("instance variable is " + vso.ins);
+		System.out.println("static variable is " + name);
+		System.out.println("val variable is " + vso.val);
+	}
+
+}

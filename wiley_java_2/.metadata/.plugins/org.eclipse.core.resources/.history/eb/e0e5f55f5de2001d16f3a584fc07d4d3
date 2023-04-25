@@ -1,0 +1,31 @@
+package JavaClass2;
+
+class Employee{
+	private String name;
+	private int age;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getage() {
+		return age;
+	}
+	public void setage(int age) {
+		this.age = age;
+	}
+}
+
+public class EmployeeEncapsulation {
+	
+	public static void main(String[] args) {
+		Employee emp = new Employee();
+		
+		emp.setName("Wiley");
+		emp.setage(15);
+		
+		System.out.println("Name "+ emp.getName() + "age "+ emp.getage());
+	}
+}

@@ -1,0 +1,15 @@
+package Core_java;
+
+public int add(int a, int b){
+	int v = a + b;
+	return v;
+}
+
+public class CompileTime {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

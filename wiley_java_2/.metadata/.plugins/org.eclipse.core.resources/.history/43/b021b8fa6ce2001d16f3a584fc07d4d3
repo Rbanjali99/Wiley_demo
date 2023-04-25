@@ -1,0 +1,23 @@
+package Exception;
+
+public class ExceptionHandling {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("first statement");
+		
+		int arr[] = {1,2,3,4};
+		try {
+		System.out.println(arr[1]);
+		System.out.println(arr[4]);//exception occured here
+		System.out.println(arr[2]);//will not run
+		}
+		catch(Exception e) {//exception is the parent if all types of exeption
+			e.printStackTrace();
+		}
+		
+		System.out.println("another statement");
+
+	}
+
+}

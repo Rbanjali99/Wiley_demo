@@ -1,0 +1,31 @@
+package Core_java;
+
+class Vehicle1{  //superclass
+	public void tier() {
+		System.out.println("have 4 tires");
+	}
+}
+class Car1 extends Vehicle1 {
+	public void speed() {
+		System.out.println("tier and speed of car");
+	}
+}
+class Van extends Vehicle1{
+	public void sensor() {
+		System.out.println("tier and sensor in van"");
+	}
+}
+class Vannn extends Van{
+	public void horn() {
+		System.out.println("horn and sensor both");
+	}
+}
+
+public class Hybrid {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

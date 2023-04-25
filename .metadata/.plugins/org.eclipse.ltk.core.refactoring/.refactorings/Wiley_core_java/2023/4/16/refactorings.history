@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Core_java.Createclass&apos; to &apos;CreateClass&apos;&#x0D;&#x0A;- Original project: &apos;Wiley_core_java&apos;&#x0D;&#x0A;- Original element: &apos;Core_java.Createclass&apos;&#x0D;&#x0A;- Renamed element: &apos;Core_java.CreateClass&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Createclass&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Core_java{Createclass.java[Createclass" matchStrategy="1" name="CreateClass" qualified="false" references="true" similarDeclarations="false" stamp="1682052606041" textual="false" version="1.0"/>
+</session>

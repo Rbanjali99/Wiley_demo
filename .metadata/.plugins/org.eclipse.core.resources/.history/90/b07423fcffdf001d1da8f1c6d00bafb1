@@ -1,0 +1,32 @@
+package Core_java;
+
+public class Createclass {
+
+	int a = 20;
+
+	public void add() {
+		System.out.println("number adding");
+	}
+
+	public static void main(String[] args) throws InstantiationException, IllegalAccessException {
+
+		Createclass cc = new Createclass();
+		
+		//creating object with new keyword
+		cc.add();
+		System.out.println(cc);
+
+		//creating new object with newTnstance()
+		try {
+		Class c = Class.forName("Wiley_core_java.Createclass");
+		@SuppressWarnings("deprecation")
+		Createclass ci = (Createclass)c.newInstance();
+		ci.add();
+		System.out.println(ci);
+		}
+		catch(ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

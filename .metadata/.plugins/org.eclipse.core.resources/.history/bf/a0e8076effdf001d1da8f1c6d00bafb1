@@ -1,0 +1,22 @@
+package Core_java;
+
+public class Createclass {
+
+	int a = 20;
+
+	public void add() {
+		System.out.println("number adding");
+	}
+
+	public static void main(String[] args) {
+
+		Createclass cc = new Createclass();
+		
+		cc.add();
+		System.out.println(cc);
+
+		// TODO Auto-generated method stub
+
+	}
+
+}

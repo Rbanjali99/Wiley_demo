@@ -1,0 +1,16 @@
+package StringClasses;
+
+public class StringFormat {
+
+	public static void main(String[] args) {
+		
+		String title = "Java Developer";
+		float salary = 2000.5389f;
+		int age = 25;
+		System.out.println(salary);
+		System.out.format("%s has age %d and saray %.2f",title,age,salary);
+		
+
+	}
+
+}

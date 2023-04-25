@@ -1,0 +1,15 @@
+package Core_java;
+
+public class Constructor_types {
+	
+	public void add() {
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Constructor_types ct = new Constructor_types();
+
+	}
+
+}

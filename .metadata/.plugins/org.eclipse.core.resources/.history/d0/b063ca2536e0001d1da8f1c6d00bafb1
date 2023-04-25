@@ -1,0 +1,28 @@
+package Core_java;
+
+class Animal{
+	public void eat() {
+		System.out.println("eat");
+	}
+	public void sleep() {
+		System.out.println("sleep");
+	}
+}
+
+class Lion extends Animal{
+	public void eat() {
+		System.out.println("eating lion");
+	}
+	public void roar() {
+		System.out.println("roar");
+	}
+}
+public class RunTime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}
