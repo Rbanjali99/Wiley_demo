@@ -1,0 +1,20 @@
+package IOStream;
+import java.io.FileOutputStream;
+import java.io.DataOutputStream;
+
+public class DataStreamClass {
+
+	public static void main(String[] args) {
+
+
+		FileOutputStream fout = new FileOutputStream("C:\\Users\\HP\\OneDrive\\Desktop\\Data2");
+		
+		DataOutputStream dos = new DataOutputStream(fout);
+		
+		dos.writeBytes("I am a Programmer");
+		dos.flush();
+		dos.close();
+
+	}
+
+}

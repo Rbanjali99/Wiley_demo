@@ -1,0 +1,10 @@
+package SerializableConcepts;
+
+public class DeserializableObj {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

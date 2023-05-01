@@ -1,0 +1,10 @@
+package Generics;
+
+public class Integerprinter {
+
+	Integer valToPrint;
+	public Integerprinter(Integer valToPrint) {
+		super();
+	}
+
+}

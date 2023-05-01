@@ -1,0 +1,53 @@
+package IOStream;
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class StudentRecordOutput {
+	DataOutputStream dataOutput;
+	
+	public StudentRecordOutput(String outputFile) throws IOException {
+		dataOutput = new DataOutputStream(new FileOutputStream(outputFile));
+	}
+	
+	public void Write(Student student) throws IOException {
+		dataOutput.writeUTF(student.getName());
+		dataOutput.writeBoolean(student.isGender());
+		dataOutput.writeInt(student.getAge());
+		dataOutput.writeFloat(student.getGrade());
+	}
+	
+	public void save() throws IOException {
+		dataOutput.close();
+	}
+	
+	public static void main(String[] args) {
+		
+		if(args.length < 1) {
+			System.out.println("Please provide output file");
+			System.exit(0);
+		}
+		String outputFile = args[0];
+		List<Student> listStudent = new ArrayList<>();
+		
+		listStudent.add(new Student("Anjali",true,22,90.9f));
+		listStudent.add(new Student("Neha",true,21,88.91f));
+		listStudent.add(new Student("Alok",false,23,70.5f));
+		
+		try {
+			StudentRecordOutput outputWriter = new StudentRecordOutput(outputFile);
+			
+			for(Student student:listStudent) {
+				outputWriter.Write(student);
+			}
+			outputWriter.save();
+			
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

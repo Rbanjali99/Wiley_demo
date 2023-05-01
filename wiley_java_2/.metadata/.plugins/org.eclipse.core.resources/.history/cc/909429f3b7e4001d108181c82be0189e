@@ -1,0 +1,36 @@
+package Patterns;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class PatternMatch {
+
+	public static void main(String[] args) {
+		
+//		Pattern pattern = Pattern.compile("agent \\d\\d\\d");
+//		Matcher matcher = pattern.matcher("agent 0078");
+		
+//		Pattern pattern = Pattern.compile("agent \\d{3}")exactly 3 digits or not
+				
+		Pattern pattern = Pattern.compile("agent \\d{3,}");//3digits or more
+		Matcher matcher = pattern.matcher("agent 0078");
+		
+		Pattern pattern1 = Pattern.compile("agent 007");
+		Matcher matcher1 = pattern1.matcher("agent 007");
+		
+		Pattern pattern2 = Pattern.compile("\\S\\s");
+		Matcher matcher2 = pattern2.matcher("8 ");
+		
+		boolean found = matcher.find();
+		boolean founddd = matcher.matches();
+		boolean found1 = matcher1.matches();
+		boolean found2 = matcher2.matches();
+		
+		System.out.println(found);
+		System.out.println(founddd);
+		System.out.println(found1);
+		System.out.println(found2);
+
+	}
+
+}

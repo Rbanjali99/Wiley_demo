@@ -1,0 +1,15 @@
+package Random;
+
+import java.io.*;
+
+public class RandomAccessClass {
+
+	public static void main(String[] args) {
+		
+		try {
+			RandomAccessFile file = new RandomAccessFile("testfile.txt");
+		}
+
+	}
+
+}

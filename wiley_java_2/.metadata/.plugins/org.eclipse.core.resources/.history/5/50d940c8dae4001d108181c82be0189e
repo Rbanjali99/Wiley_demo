@@ -1,0 +1,32 @@
+package JavaThreads;
+
+
+class Parent extends Thread{
+	
+	public void m1() {
+		System.out.println("");
+		
+	}
+}
+class T2 extends Parent implements Runnable{
+
+	@Override
+	public void run() {
+		m1();
+		System.out.println("by using runnable interface");
+		
+	}
+	
+}
+public class ThreadConcept{
+	public static void main(String[] args) {
+		T1 t1 = new T1();
+		t1.start();
+		
+		T2 t2 = new T2();
+		Thread trd = new Thread();
+		
+		trd.start();
+		
+	}
+}

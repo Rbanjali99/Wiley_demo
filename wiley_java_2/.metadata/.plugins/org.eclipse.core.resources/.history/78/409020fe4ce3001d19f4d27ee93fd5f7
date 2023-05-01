@@ -1,0 +1,21 @@
+package IOStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.DataOutputStream;
+
+public class DataStreamClass {
+
+	public static void main(String[] args) throws IOException {
+
+
+		FileOutputStream fout = new FileOutputStream("C:\\Users\\HP\\OneDrive\\Desktop\\Data3");
+		
+		DataOutputStream dos = new DataOutputStream(fout);
+		
+		dos.writeBytes("hiiiiiii");
+//		dos.flush();
+		dos.close();
+
+	}
+
+}

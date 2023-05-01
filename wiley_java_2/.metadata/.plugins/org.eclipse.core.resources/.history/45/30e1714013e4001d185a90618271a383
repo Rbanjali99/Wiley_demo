@@ -1,0 +1,15 @@
+package DateTime;
+
+import java.time.LocalDate;
+
+public class DateTimeClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub\
+		LocalDate myDate = new LocalDate.now();
+		
+		System.err.println(myDate);
+
+	}
+
+}

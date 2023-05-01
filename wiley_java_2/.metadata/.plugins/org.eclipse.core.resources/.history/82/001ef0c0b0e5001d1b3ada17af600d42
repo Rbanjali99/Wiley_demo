@@ -1,0 +1,8 @@
+package Generics;
+
+public class Dog extends Animal {
+
+	public dog() {
+		System.out.println("This is dog class");
+	}
+}
