@@ -1,0 +1,19 @@
+package Collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class VectorClass {
+
+	public static void main(String[] args) {
+		
+		int size = 1000000;
+		
+		List<Integer> arrayList = new ArrayList<>();
+		long start = System.currentTimeMillis();
+		long end = System.currentTimeMillis();
+		
+		System.out.println("Time taken to add values : " + (end - start));
+	}
+
+}
